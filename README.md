@@ -13,10 +13,10 @@ The research follows a comprehensive statistical workflow:
 * Analysis of inter-relationships through **Correlation Matrices**.
   
 ![Boxplots](plots/Boxplots1.png)
-*Boxplots for each predictor (excluded the binary predictors).
+Boxplots for each predictor (excluded the binary predictors).
 
 ![Correlation Matrix](plots/CorrelationPLOT.png)
-*Initial correlation analysis showing dependencies between predictors.
+Initial correlation analysis showing dependencies between predictors.
 
 
 ### 2. Feature Selection & Regularization
@@ -27,7 +27,7 @@ The research follows a comprehensive statistical workflow:
 
 ![VIF Analysis](plots/VIF.png)
 ![VIF AFTER](plots/VIF_AFTER.png)
-*VIF values before and after filtering problematic predictors.
+VIF values before and after filtering problematic predictors.
 
 ### 3. Resampling Techniques
 * **Subsampling:** Drawing unique subsamples without replacement, using a size of $m = \lfloor 0.632n \rfloor$.
@@ -38,7 +38,7 @@ The research follows a comprehensive statistical workflow:
 * **Metrics:** Evaluation based on **Root Mean Squared Error (RMSE)** for $L_2$ models and **Mean Absolute Error (MAE)** for $L_1$ models.
 
 ![Performance Comparison](plots/COMPAREMETRICS.png)
-*Comparison of predictive accuracy across methodologies.
+Comparison of predictive accuracy across methodologies.
 
 ## 📈 Key Findings
 * **Predictor Stability:** Variable **X12** emerged as the most consistently significant predictor across all four methodologies.
