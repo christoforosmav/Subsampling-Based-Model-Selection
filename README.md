@@ -41,10 +41,6 @@ VIF values before and after filtering problematic predictors.
 * **Cross-Validation:** Performed **10-Fold CV** repeated 100 times to ensure stable error estimates.
 * **Metrics:** Evaluation based on **Root Mean Squared Error (RMSE)** for $L_2$ models and **Mean Absolute Error (MAE)** for $L_1$ models.
 
-![Performance Comparison](plots/COMPAREMETRICS.png)
-
-Comparison of predictive accuracy across methodologies.
-
 ## 📈 Key Findings
 * **Predictor Stability:** Variable **X12** emerged as the most consistently significant predictor across all four methodologies.
 * **Method Performance:** While $L_1$ methods were theoretically considered for healthcare data, the results indicated that **$L_2$ methods (Lasso/ADLASSO)** performed better in this specific case.
