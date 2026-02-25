@@ -13,9 +13,11 @@ The research follows a comprehensive statistical workflow:
 * Analysis of inter-relationships through **Correlation Matrices**.
   
 ![Boxplots](plots/Boxplots1.png)
+
 Boxplots for each predictor (excluded the binary predictors).
 
-![Correlation Matrix](plots/CorrelationPLOT.png)
+![Correlation Matrix](plots/corrmatrix.png)
+
 Initial correlation analysis showing dependencies between predictors.
 
 
@@ -26,7 +28,9 @@ Initial correlation analysis showing dependencies between predictors.
     * **LAD Lasso** & **Adaptive LAD Lasso** ($L_1$ methods).
 
 ![VIF Analysis](plots/VIF.png)
+
 ![VIF AFTER](plots/VIF_AFTER.png)
+
 VIF values before and after filtering problematic predictors.
 
 ### 3. Resampling Techniques
@@ -38,6 +42,7 @@ VIF values before and after filtering problematic predictors.
 * **Metrics:** Evaluation based on **Root Mean Squared Error (RMSE)** for $L_2$ models and **Mean Absolute Error (MAE)** for $L_1$ models.
 
 ![Performance Comparison](plots/COMPAREMETRICS.png)
+
 Comparison of predictive accuracy across methodologies.
 
 ## 📈 Key Findings
