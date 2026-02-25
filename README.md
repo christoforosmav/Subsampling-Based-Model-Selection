@@ -3,7 +3,7 @@
 This repository contains the methodology and implementation of my undergraduate thesis, conducted at the University of Crete, Department of Applied Mathematics.
 
 ## 📌 Project Overview
-The primary objective of this thesis is to evaluate a **Subsampling-based model selection approach** for Linear Regression models. The study utilizes a clinical dataset from the **Department of Respiratory Medicine (School of Medicine, University of Crete)** to identify key factors influencing health outcomes in patients undergoing specific therapies.
+The primary objective of this thesis is to evaluate a **Subsampling-based model selection approach** for Linear Regression models. The study utilizes a clinical dataset from the **Department of Respiratory Medicine (School of Medicine, University of Crete)** to identify key factors influencing health outcomes in patients undergoing specific therapies. To ensure data confidentiality, variables have been assigned with coded names.
 
 ## 🛠️ Technical Pipeline
 The research follows a comprehensive statistical workflow:
@@ -13,10 +13,10 @@ The research follows a comprehensive statistical workflow:
 * Analysis of inter-relationships through **Correlation Matrices**.
   
 ![Boxplots](plots/Boxplots1.png)
-Boxplots for each predictor (excluded the binary predictors).
+*Boxplots for each predictor (excluded the binary predictors).
 
 ![Correlation Matrix](plots/CorrelationPLOT.png)
-Initial correlation analysis showing dependencies between predictors.
+*Initial correlation analysis showing dependencies between predictors.
 
 
 ### 2. Feature Selection & Regularization
@@ -25,6 +25,10 @@ Initial correlation analysis showing dependencies between predictors.
     * **Lasso** & **Adaptive Lasso** ($L_2$ methods).
     * **LAD Lasso** & **Adaptive LAD Lasso** ($L_1$ methods).
 
+![VIF Analysis](plots/VIF.png)
+![VIF AFTER](plots/VIF_AFTER.png)
+*VIF values before and after filtering problematic predictors.
+
 ### 3. Resampling Techniques
 * **Subsampling:** Drawing unique subsamples without replacement, using a size of $m = \lfloor 0.632n \rfloor$.
 * **Bootstrap:** Generated 200 pseudo-data resamples with replacement to construct robust **Confidence Intervals**.
@@ -32,6 +36,9 @@ Initial correlation analysis showing dependencies between predictors.
 ### 4. Model Validation
 * **Cross-Validation:** Performed **10-Fold CV** repeated 100 times to ensure stable error estimates.
 * **Metrics:** Evaluation based on **Root Mean Squared Error (RMSE)** for $L_2$ models and **Mean Absolute Error (MAE)** for $L_1$ models.
+
+![Performance Comparison](plots/COMPAREMETRICS.png)
+*Comparison of predictive accuracy across methodologies.
 
 ## 📈 Key Findings
 * **Predictor Stability:** Variable **X12** emerged as the most consistently significant predictor across all four methodologies.
