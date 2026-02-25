@@ -2,10 +2,10 @@
 
 This repository contains the methodology and implementation of my undergraduate thesis, conducted at the University of Crete, Department of Applied Mathematics.
 
-## Project Overview
+## 📌 Project Overview
 The primary objective of this thesis is to evaluate a **Subsampling-based model selection approach** for Linear Regression models. The study utilizes a clinical dataset from the **Department of Respiratory Medicine (School of Medicine, University of Crete)** to identify key factors influencing health outcomes in patients undergoing specific therapies.
 
-## Technical Pipeline
+## 🛠️ Technical Pipeline
 The research follows a comprehensive statistical workflow:
 
 ### 1. Exploratory Data Analysis (EDA)
@@ -31,14 +31,11 @@ The research follows a comprehensive statistical workflow:
 * **Method Performance:** While $L_1$ methods were theoretically considered for healthcare data, the results indicated that **$L_2$ methods (Lasso/ADLASSO)** performed better in this specific case.
 * **Inference:** Bootstrap sampling provided higher precision in estimates compared to conventional methods.
 
-## Technologies & Libraries
+## Libraries
 * **Language:** R 
 * **Key Packages:**
     * `glmnet`: Lasso and Ridge regularization.
     * `rqPen`: LAD Lasso and Adaptive LAD Lasso implementation.
     * `hqreg`: Quantile regression utilities.
 
----
-**Author:** Christoforos Mavrikakis 
-**Date:** 17 April 2024
 
