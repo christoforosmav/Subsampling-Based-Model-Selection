@@ -11,6 +11,13 @@ The research follows a comprehensive statistical workflow:
 ### 1. Exploratory Data Analysis (EDA)
 * Detailed inspection of 33 predictors using **Boxplots** to identify distributions and outliers.
 * Analysis of inter-relationships through **Correlation Matrices**.
+  
+![Boxplots](plots/Boxplots1.png)
+Boxplots for each predictor (excluded the binary predictors).
+
+![Correlation Matrix](plots/CorrelationPLOT.png)
+Initial correlation analysis showing dependencies between predictors.
+
 
 ### 2. Feature Selection & Regularization
 * **Multicollinearity Treatment:** Applied **Variance Inflation Factor (VIF)** analysis. Predictors **X50** and **X63** were removed for exceeding the threshold (VIF > 10).
